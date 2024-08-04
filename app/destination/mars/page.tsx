@@ -1,10 +1,10 @@
-import React from 'react'
-import Title from '../components/title'
+import DestinationNavBar from '@/app/components/destination-navbar'
+import Title from '@/app/components/title'
 import Image from 'next/image'
-import moon from '../../public/assets/destination/image-moon.png'
-import DestinationNavBar from '../components/destination-navbar'
+import React from 'react'
+import mars from '../../../public/assets/destination/image-mars.png'
 
-const Destination = () => {
+const Mars = () => {
   return (
     <div className="h-screen w-full bg-black bg-[url(/assets/destination/background-destination-mobile.jpg)] md:bg-[url(/assets/destination/background-destination-tablet.jpg)] lg:bg-[url(/assets/destination/background-destination-desktop.jpg)] bg-cover bg-center " >
       <main className='w-full md:w-[80%] mx-auto h-full flex justify-center items-center'>
@@ -12,21 +12,21 @@ const Destination = () => {
            <Title title='pick Your Destination' index='01' />
            <div className='flex justify-center items-center'>
             <div className='flex flex-col lg:flex-row justify-between lg:justify-around items-center w-full mt-5 lg:mt-20'>
-                <Image src={moon} alt='' className='w-[100px] md:w-[300px] '/>
+                <Image src={mars} alt='' className='w-[100px] md:w-[300px] '/>
 
                 <div className=" text-white w-full lg:w-[40%]">
                   <DestinationNavBar />
-                  <h1 className='text-4xl lg:text-8xl text-center lg:text-left uppercase tracking-[5px] my-4'>moon</h1>
-                  <p className='my-4 text-center lg:text-left '>See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                  <h1 className='text-4xl lg:text-8xl text-center lg:text-left uppercase tracking-[5px] my-4'>mars</h1>
+                  <p className='my-4 text-center lg:text-left '>Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
                   <hr className='border-gray-500 my-4 w-[80%] mx-[10%]'/>
                   <div className="flex flex-col md:flex-row uppercase justify-around items-center">
                     <div className='my-2'>
                       <p className='text-center'>Avg. distance</p>
-                      <h1 className='text-center'>384,400 km</h1>
+                      <h1 className='text-center'>225 mil. km</h1>
                     </div>
                     <div className='my-2'>
                       <p className='text-center'>Est. travel time</p>
-                      <h1 className='text-center'>3 days</h1>
+                      <h1 className='text-center'>9 months</h1>
                     </div>
                   </div>
                 </div>
@@ -38,4 +38,4 @@ const Destination = () => {
   )
 }
 
-export default Destination
+export default Mars

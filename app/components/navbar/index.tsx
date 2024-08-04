@@ -13,11 +13,11 @@ const NavBar = () => {
 
   return (
     <div>
-      <nav className='w-full bg-transparent fixed top-0 left-0 right-0 z-10 mt-10'>
+      <nav className='w-full bg-transparent fixed top-0 left-0 right-0 z-10 mt-0 md:mt-10'>
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
-              <Link href="/">
+              <Link href="/home">
                  <Image src={logo} alt=''/>
               </Link>
 
@@ -39,7 +39,7 @@ const NavBar = () => {
             <div className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 bg-transparent ${isOpen ? 'p-12 md:p-0 block': 'hidden'}`}>
               <ul className="h-screen md:h-auto items-center justify-center md:flex backdrop-blur bg-opacity-10 bg-white">
                 <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900 md:hover:border-b-2 md:hover:border-white md:hover:bg-transparent">
-                  <Link href="#about" onClick={() => setIsOpen(!isOpen)}>
+                  <Link href="/home" onClick={() => setIsOpen(!isOpen)}>
                     <div className='flex justify-center items-center uppercase'>
                       <span>00</span>
                       <p className='ml-3'>Home</p>
@@ -47,7 +47,7 @@ const NavBar = () => {
                   </Link>
                 </li>
                 <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900 md:hover:border-b-2 md:hover:border-white md:hover:bg-transparent">
-                  <Link href="#blog" onClick={() => setIsOpen(!isOpen)}>
+                  <Link href="/destination" onClick={() => setIsOpen(!isOpen)}>
                     <div className='flex justify-center items-center uppercase'>
                       <span>01</span>
                       <p className='ml-3'>Destination</p>
@@ -55,7 +55,7 @@ const NavBar = () => {
                   </Link>
                 </li>
                 <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:border-b-2 md:hover:border-white md:hover:bg-transparent">
-                  <Link href="#contact" onClick={() => setIsOpen(!isOpen)}>
+                  <Link href="/technology" onClick={() => setIsOpen(!isOpen)}>
                     <div className='flex justify-center items-center uppercase'>
                       <span>02</span>
                       <p className='ml-3'>Technology</p>
@@ -63,7 +63,7 @@ const NavBar = () => {
                   </Link>
                 </li>
                 <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:border-b-2 md:hover:border-white md:hover:bg-transparent">
-                  <Link href="#projects" onClick={() => setIsOpen(!isOpen)}>
+                  <Link href="/crew" onClick={() => setIsOpen(!isOpen)}>
                     <div className='flex justify-center items-center uppercase'>
                       <span>03</span>
                       <p className='ml-3'>crew</p>
