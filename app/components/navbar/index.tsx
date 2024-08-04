@@ -1,9 +1,9 @@
 'use client'
 import Image from 'next/image'
 import React, { useState } from 'react'
-import logo from '../../assets/logo.svg'
-import close from '../../assets/close.svg'
-import hamburger from '../../assets/hamburger.svg'
+import logo from '../../../public/assets/logo.svg'
+import close from '../../../public/assets/close.svg'
+import hamburger from '../../../public/assets/hamburger.svg'
 import Link from 'next/link'
 
 const NavBar = () => {
@@ -38,7 +38,7 @@ const NavBar = () => {
           <div>
             <div className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 bg-transparent ${isOpen ? 'p-12 md:p-0 block': 'hidden'}`}>
               <ul className="h-screen md:h-auto items-center justify-center md:flex backdrop-blur bg-opacity-10 bg-white">
-                <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900 md:hover:border-b-2 md:hover:border-white md:hover:bg-transparent">
                   <Link href="#about" onClick={() => setIsOpen(!isOpen)}>
                     <div className='flex justify-center items-center uppercase'>
                       <span>00</span>
@@ -46,7 +46,7 @@ const NavBar = () => {
                       </div>
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900 md:hover:border-b-2 md:hover:border-white md:hover:bg-transparent">
                   <Link href="#blog" onClick={() => setIsOpen(!isOpen)}>
                     <div className='flex justify-center items-center uppercase'>
                       <span>01</span>
@@ -54,7 +54,7 @@ const NavBar = () => {
                     </div>
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:border-b-2 md:hover:border-white md:hover:bg-transparent">
                   <Link href="#contact" onClick={() => setIsOpen(!isOpen)}>
                     <div className='flex justify-center items-center uppercase'>
                       <span>02</span>
@@ -62,7 +62,7 @@ const NavBar = () => {
                     </div>
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:border-b-2 md:hover:border-white md:hover:bg-transparent">
                   <Link href="#projects" onClick={() => setIsOpen(!isOpen)}>
                     <div className='flex justify-center items-center uppercase'>
                       <span>03</span>

@@ -1,5 +1,11 @@
 import NavBar from "./components/navbar"
 import '../app/globals.css'
+import { Bellefair } from '@next/font/google';
+
+const bellefair = Bellefair({
+  subsets: ['latin'],
+  weight: "400"
+});
 
 export const metadata = {
   title: 'Next.js',
@@ -13,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={bellefair.className}>
         <NavBar />
         {children}
       </body>
