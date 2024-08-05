@@ -1,24 +1,33 @@
+'use client'
 import React from 'react'
+import Title from '../components/title'
+import Image from 'next/image'
+import commander from '../../public/assets/crew/image-douglas-hurley.png'
+import EllipsesNav from '../components/ellipses-nav'
 
 const Crew = () => {
   return (
-    <div className="h-screen w-full bg-black bg-[url(/assets/crew/background-crew-mobile.jpg)] md:bg-[url(/assets/crew/background-crew-tablet.jpg)] lg:bg-[url(/assets/crew/background-crew-desktop.jpg)] bg-cover bg-center " >
-      <main className='w-[80%] mx-auto'>
-          <div className='w-full flex justify-center items-center h-screen '>
-            <div className="flex flex-col lg:flex-row  items-center justify-between lg:justify-around h-auto">
-              <div className='text-white w-[auto] md:w-[40%] flex flex-col items-center lg:items-start justify-between h-[300px]'>
-                <p className='uppercase text-center tracking-[2px]'>so you want to  travel to</p>
-                <h1 className='uppercase text-8xl lg:text-9xl text-center'>space</h1>
-                <span className='text-wrap text-center'>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</span>
+    <div className="h-screen w-full bg-black bg-[url(/assets/destination/background-destination-mobile.jpg)] md:bg-[url(/assets/destination/background-destination-tablet.jpg)] lg:bg-[url(/assets/destination/background-destination-desktop.jpg)] bg-cover bg-center " >
+    <main className='w-full md:w-[80%] mx-auto h-full flex justify-center items-center'>
+        <div className="w-full md:w-[80%] h-[80%] md:h-[70%] lg:w-[90%]">
+         <Title title='meet your crew' index='02' />
+         <div className='flex justify-center items-center'>
+          <div className='flex flex-col lg:flex-row justify-between lg:justify-around items-center w-full mt-5 lg:mt-20'>
+              
+              <div className=" text-white w-full lg:w-[40%]">
+              <h2 className='text-gray-500 uppercase text-4xl'>commander</h2>
+                <h1 className='text-4xl lg:text-8xl text-center lg:text-left uppercase tracking-[5px] my-4'>douglas hurley</h1>
+                <p className='my-4 text-center lg:text-left '>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+                <EllipsesNav />
               </div>
 
-              <div className='uppercase w-[150px] h-[150px] lg:w-[200px] lg:h-[200px] rounded-[50%] bg-white flex items-center justify-center mt-4'>
-                <h1 className='text-center'>explore</h1>
-              </div>
-            </div>
+              <Image src={commander} alt='' className='w-[100px] md:w-[400px] '/>
+
           </div>
-      </main>
-    </div>
+         </div>
+        </div>
+    </main>
+  </div>
   )
 }
 
