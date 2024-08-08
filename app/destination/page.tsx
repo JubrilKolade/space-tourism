@@ -56,7 +56,7 @@ const Destination = () => {
 
                 <div className=" text-white w-full lg:w-[40%]">
                   <DestinationNavBar />
-                  <ul className="flex text-white items-center justify-between w-[300px] uppercase mx-auto lg:mx-0 my-5">
+                  {/* <ul className="flex text-white items-center justify-between w-[300px] uppercase mx-auto lg:mx-0 my-5">
                     {destinationInfo.map((location) => (
                       // <li key={index}>
                       //   <Link
@@ -78,7 +78,7 @@ const Destination = () => {
                       {location.location}
                       </button>
                     ))}
-                  </ul>
+                  </ul> */}
 
 
                   <h1 className='text-4xl lg:text-8xl text-center lg:text-left uppercase tracking-[5px] my-4'>moon</h1>
