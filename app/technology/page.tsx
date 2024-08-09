@@ -55,7 +55,7 @@ const Technology = () => {
 
               </div>
 
-              <Image src={technology[activeMember].imageUrl} width={400} height={400} alt='' className='w-[100px] md:w-[400px] '/>
+              <Image src={technology[activeMember].imageUrl} width={400} height={400} alt='' className='w-full h-[300px] lg:w-[600px] lg:h-[600px]'/>
 
           </div>
          </div>
