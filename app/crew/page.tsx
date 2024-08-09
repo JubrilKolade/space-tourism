@@ -37,7 +37,7 @@ const Crew = () => {
   const [activeMember, setActiveMember] = useState(0);
 
   return (
-    <div className="h-screen w-full bg-black bg-[url(/assets/destination/background-destination-mobile.jpg)] md:bg-[url(/assets/destination/background-destination-tablet.jpg)] lg:bg-[url(/assets/destination/background-destination-desktop.jpg)] bg-cover bg-center " >
+    <div className="h-screen w-full bg-black bg-[url(/assets/crew/background-crew-mobile.jpg)] md:bg-[url(/assets/crew/background-crew-tablet.jpg)] lg:bg-[url(/assets/crew/background-crew-desktop.jpg)] bg-cover bg-center " >
     <main className='w-full md:w-[80%] mx-auto h-full flex justify-center items-center'>
         <div className="w-full md:w-[80%] h-[80%] md:h-[70%] lg:w-[90%]">
          <Title title='meet your crew' index='02' />
