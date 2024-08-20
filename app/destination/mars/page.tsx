@@ -1,7 +1,6 @@
 import DestinationNavBar from '@/app/components/destination-navbar'
 import Title from '@/app/components/title'
 import Image from 'next/image'
-import React from 'react'
 import mars from '../../../public/assets/destination/image-mars.png'
 
 const Mars = () => {
